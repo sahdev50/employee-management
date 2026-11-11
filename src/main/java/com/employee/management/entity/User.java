@@ -35,6 +35,9 @@ public class User {
     @Column(nullable = false)
     private EmployeeRole role;
 
+    @Column(nullable = false)
+    private Boolean isEnable;
+
     @CreatedDate
     @Column(nullable = false, updatable = false)
     private LocalDateTime createdAt;

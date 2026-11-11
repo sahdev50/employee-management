@@ -9,4 +9,5 @@ public class ResponseDTO {
     private String username;
     private String email;
     private EmployeeRole role;
+    private boolean isEnable;
 }

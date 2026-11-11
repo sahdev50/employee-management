@@ -33,6 +33,7 @@ public class UserServiceImpl implements UserService {
                 .email(dto.getEmail())
                 .hashedPassword(bCryptPasswordEncoder.encode(dto.getPassword()))
                 .role(dto.getRole())
+                .isEnable(true)
                 .build();
 
         return userMapper.toResponseDto(userRepository.save(createdUser));

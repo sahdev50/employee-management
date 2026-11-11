@@ -26,4 +26,7 @@ public class RequestDTO {
 
     @NotNull(message = "Employee role must be specified")
     private EmployeeRole role;
+
+    @NotNull(message = "Select True or False")
+    private boolean isEnable;
 }
